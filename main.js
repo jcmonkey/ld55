@@ -141,7 +141,23 @@ startBtnText.eventMode = "none";
 
 
 
+//-------------------------------------------
+const infoText = new Text({ 
+  text: 'Use mouse to draw, then hit start.',
+style:{
+  fontFamily: 'Arial',
+  fontSize: 40,
+  fontWeight: "bold",
+  //fontStyle: "italic",
+  fill: "black",
+  stroke: { color: 'white', width: 5, join: 'round' },
+} });
 
+infoText.anchor.x = 0.5;
+infoText.anchor.y = 0.5;
+infoText.x = CENTERX;
+infoText.y = HEIGHT - 30;
+infoText.eventMode = "none";
 //===================================================
 // UI
 let normal = "green";
@@ -353,6 +369,8 @@ function drawGrid(){
       
       app.stage.addChild(gridContainer);
       
+      app.stage.addChild(infoText);
+
       genBtn.add(app);
       stopBtn.add(app);
       stopBtn.setText("Stop");
