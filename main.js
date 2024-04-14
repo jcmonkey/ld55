@@ -62,7 +62,7 @@ import { Grid } from "./grid.js";
 //===================================================
 // TEXT OBJECTS
 const titleText = new Text({ 
-    text: 'Titlescreen',
+    text: 'Summoning Thing',
   style:{
     fontFamily: 'Arial',
     fontSize: 100,
@@ -495,7 +495,7 @@ function drawGrid(){
 
   //=================================================
 
-  sceneManager(main);
+  sceneManager(title);
 
 
 
